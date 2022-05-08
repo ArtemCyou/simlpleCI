@@ -85,13 +85,13 @@ jobs:
         include:
           - os: windows-latest
             TARGET: windows
-            CMD_BUILD: go build -o httpServ.exe simpleHTTPforCI.go
-            OUT_FILE_NAME: httpServ.exe
+            CMD_BUILD: go build -o simpleHTTPforCI.exe simpleHTTPforCI.go
+            OUT_FILE_NAME: simpleHTTPforCI.exe
             ASSET_MIME: application/vnd.microsoft.portable-executable
           - os: ubuntu-latest
             TARGET: ubuntu
-            CMD_BUILD: go build -o httpServ simpleHTTPforCI.go
-            OUT_FILE_NAME: httpServ
+            CMD_BUILD: go build -o simpleHTTPforCI simpleHTTPforCI.go
+            OUT_FILE_NAME: simpleHTTPforCI
             ASSET_MIME: application/x-binary
 
     steps:
